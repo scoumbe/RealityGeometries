@@ -145,7 +145,7 @@ extension RealityGeometry {
         let endRadians = Float(endAngle) * dtoR
         let sides = (deltaDegrees * allSides) / 360
         
-        var theta: Float = 0
+        var theta: Float = startRadians
         let thetaInc = 2 * .pi / Float(allSides)
         let uStep: Float = 1 / Float(sides)
         // first vertices added will be bottom edges
